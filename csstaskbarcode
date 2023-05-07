@@ -1,0 +1,37 @@
+.taskbarcontainer{
+    width: 100%;
+    height: 100px;
+    background-color: black;  /*backround color, use backround: to add images or other media to be the backround*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: white;
+}
+
+
+@media screen and (max-width: 450px) {   /*taskbar resizing based on size of screen*/
+    .taskbarcontainer{
+        flex-direction: column;    
+        height: 110px;
+    }
+
+    .item{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1100 ){
+    .item{
+        margin: 20px;
+    }
+}
+
+
